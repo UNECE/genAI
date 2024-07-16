@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generative AI for official statsitics repository</title>
+    <link href="tabulator.min.css" rel="stylesheet">
+    <script type="text/javascript" src="tabulator.min.js"></script>
+
+    <style>
+		body {
+			font-family: Verdana;
+			background-color: rgba( 0, 0, 0, 0.1 )
+		}
+
+		.header {
+		width: 100%; 
+		padding: 10px -10px;
+		background: #343a40;
+		color: #f1f1f1;
+		box-sizing: border-box; /* Ensure padding doesn't affect the width */
+		position: fixed; /* Fix the header at the top of the window */
+		top: 0;
+		left: 0;
+		z-index: 1000; /* Ensure the header is above other elements */
+		text-align: center;
+		height: 90px;
+		}
+
+		/* Page content */
+		.content {
+		padding: 16px;
+		margin-top: 70px; 
+		padding-bottom: 120px;
+		}
+
+		.content_small {
+			font-size: 15px
+		}
+
+
+		.footer {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: white;
+		text-align: center;
+		padding: 10px 0;
+		z-index: 1000; /* Ensure the footer is above other elements */
+		height: 50px; /* Set a specific height for the footer */
+		box-sizing: border-box;
+		}
+
+		.footer img {
+		max-height: 100%; /* Ensure the image fits within the footer height */
+		width: auto; /* Maintain aspect ratio */
+		}
+		/* The sticky class is added to the header with JS when it reaches its scroll position */
+		.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%
+		}
+
+		/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+		.sticky + .content {
+		padding-top: 102px;
+		}
+	</style>
+
+
+
+	<script type="text/javascript">
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the header
+		var header = document.getElementById("myHeader");
+
+		// Get the offset position of the navbar
+		var sticky = header.offsetTop;
+
+		// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		if (window.pageYOffset > sticky) {
+			header.classList.add("sticky");
+		} else {
+			header.classList.remove("sticky");
+		}
+		}
+	</script>
+  </head>
+
+  <body style="padding: 1rem;">
+
+    <div class="header">
+      <h2>Generative AI use cases in official statistics</h2>
+    </div>
+
+    <div class="content"> 
+      <p> This page contains generative AI use cases in national and international statistical organizations presented at various relevant meetings. If you have any use case / research you wish to add to this list, please submit it via pull request to <a href="https://github.com/UNECE/GenAI/blob/main/data.js"> the data file on github</a> or <a href = "https://forms.office.com/e/6MGDyDh3Tw">this form</a>. </p>
+
+		<h3> List of use cases </h3>
+
+		<div>
+			<button type="submit" onclick="window.open('data.js')">See data file in JS </button>
+		</div>
+
+		<p> </p>
+
+		<div id="example-table">
+		
+			<script src="data.js"></script>
+
+			<script type="text/javascript">
+
+				var linkFormatter = function(cell, formatterParams, onRendered){
+					var name = cell.getValue();
+					var url = cell.getRow().getData().link; // Assuming the URL is stored in a "link" field
+						if (url) {
+							return "<a href='" + url + "' target='_blank' style='white-space: normal; word-wrap: break-word;'>" + name + "</a>";
+						} else {
+							return "<div style='white-space: normal; word-wrap: break-word;'>" + name + "</div>";
+						}
+				};
+				
+				//create Tabulator on DOM element with id "example-table"
+				var table = new Tabulator("#example-table", {
+				// height: 200, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+				data: tabledata, //assign data to table
+				layout: "fitColumns", // alternatives: fitData ; fitDataStretch  ;fitDataFill ; fitDataTable ; fitColumns
+				columns: [ //Define Table Columns
+					{
+					title: " ",
+					field: "id",
+					width: 40,
+					hozAlign:"center",
+					}, {
+					title: "Use case type",
+					field: "usecasetype",
+					formatter:"textarea",
+					headerWordWrap:true,
+					}, {
+					title: "Title",
+					field: "worktitle",
+					hozAlign: "left",
+					formatter: linkFormatter,
+					}, {
+					title: "Resource type",
+					field: "resourcetype",
+					headerWordWrap:true,
+					}, {
+					title: "Organisation",
+					field: "organisation",
+					formatter:"textarea",
+					}, {
+					title: "Date",
+					field: "date",
+					width: 80,
+					}, {
+					title: "AI models used",
+					field: "aimodels",
+					headerWordWrap:true,
+					formatter:"textarea",
+					}, {
+					title: "Approach",
+					field: "approach",
+					formatter:"textarea",
+					}, {
+					title: "Tools",
+					field: "tools",
+					formatter:"textarea",
+					}, {
+					title: "Code avaiability",
+					field: "codeavailability",
+					headerWordWrap:true
+					},
+				],
+				});
+			</script>
+
+			
+		</div>
+
+		<h3> List of use case type </h3>
+		<div class = "content_small"> 
+			<ul>
+				<li>Code and IT development (e.g., code translation, code generation)</li>
+				<li>Text generation for data processing (e.g., synthetic data generation, classification for COICOP)</li>
+				<li>Text generation for analysis (e.g., analytical report generation, market analysis using text summaries from news articles)</li>
+				<li>Communication - textual materials (e.g., press release, social media post)</li>
+				<li>Communication - images or videos materials  </li>
+				<li>Data dissemination and information search (e.g., variable/time series search, content search including internal use) </li>
+				<li>Chatbot (e.g., for survey respondents, interviewers) </li>
+				<li>Administrative tasks (e.g., internal email, meeting notes, preparing presentation slides)</li>
+				<li>Other</li>
+			</ul>  
+		</div>
+
+		<br> 
+		<p style="font-size: 10px;">  * This compilation consists of papers, presentations and other resources, each authored by different contributors. Please note that each resource may be subject to its own licensing terms. We advise you to check the individual licenses provided within each resource for specific usage rights and restrictions. </p>	
+		<p style="font-size: 10px;">  ** The table is generated using <a href="https://tabulator.info/">Tabulator</a> under MIT license. </p>
+	
+	</div>
+
+	
+	<div class="footer">
+      <a  href = "https://unece.org/statistics/modernstats"> <img src="modernstats.jpg" alt="Footer Image"> </a>
+    </div>
+    
+  </body>
+</html> 
