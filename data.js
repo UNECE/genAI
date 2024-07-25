@@ -257,5 +257,18 @@ var tabledata = [{
     approach: " ",
     tools: " ",
     codeavailability: " "
+},
+{
+    id: 21,
+    usecasetype: "Communication - images or videos materials",
+    worktitle: "AI tools and video generation process",
+    link: "https://vimeo.com/statcanvideo/review/982142762/57e7b37f68",
+    resourcetype: "Video demo",
+    organisation: "Statistics Canada",
+    date: "2024-07",
+    aimodels: "GIST-all-MiniLM-L6-v2",
+    approach: " ",
+    tools: "HeyGen, ElevenLabs, ChatGPT, Hedra, Suno",
+    codeavailability: "N/A"
 }
 ]
