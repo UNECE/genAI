@@ -240,9 +240,22 @@ var tabledata = [{
     resourcetype: "Blog",
     organisation: "UK ONS",
     date: "2024-07",
-    aimodels: " MiniLM, Gemini-Pro",
+    aimodels: "MiniLM, Gemini-Pro",
     approach: "RAG",
     tools: "LangChain, Streamlit",
     codeavailability: "Yes"
-} 
+},
+{
+    id: 20,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Beyond keywords: AI-driven approaches to improve data discoverability",
+    link: "https://blogs.worldbank.org/en/opendata/beyond-keywords--ai-driven-approaches-to-improve-data-discoverab0",
+    resourcetype: "Blog",
+    organisation: "World Bank",
+    date: "2024-05",
+    aimodels: "GIST-all-MiniLM-L6-v2",
+    approach: " ",
+    tools: " ",
+    codeavailability: " "
+}
 ]
