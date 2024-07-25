@@ -235,7 +235,7 @@ var tabledata = [{
 {
     id: 19,
     usecasetype: "Text generation for data processing",
-    worktitle: "Adopting artificial intelligence in the production and dissemination of official statistics",
+    worktitle: "ClassifAI – Exploring the use of Large Language Models (LLMs) to assign free text to commonly used classifications",
     link: "https://datasciencecampus.ons.gov.uk/classifai-exploring-the-use-of-large-language-models-llms-to-assign-free-text-to-commonly-used-classifications/",
     resourcetype: "Blog",
     organisation: "UK ONS",
