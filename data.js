@@ -293,7 +293,7 @@ var tabledata = [{
     organisation: "UK ONS",
     date: "2024-08",
     aimodels: "Gemini Pro 1.0, Gemma 1.0",
-    approach: "RAG",
+    approach: "Prompte template",
     tools: "Ollama",
     codeavailability: "Yes"
 } 
