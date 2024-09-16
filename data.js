@@ -283,5 +283,18 @@ var tabledata = [{
     approach: "RAG",
     tools: "Stat GPT (IMF), .Stat LLM-based Search POC (SEASE), StatsBot POC (e-Zest), ChatHMS (HMS)",
     codeavailability: "N/A"
+},
+{
+    id: 23,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Using large language models (LLMs) to improve website search experience with StatsChat",
+    link: "https://datasciencecampus.ons.gov.uk/using-large-language-models-llms-to-improve-website-search-experience-with-statschat/",
+    resourcetype: "Blog",
+    organisation: "UK ONS",
+    date: "2024-08",
+    aimodels: "Flan-T5 Large; all-mpnet-base-v2",
+    approach: "RAG",
+    tools: "Flask",
+    codeavailability: "Yes"
 } 
 ]
