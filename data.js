@@ -32,7 +32,7 @@ var tabledata = [{
     resourcetype: "Paper",
     organisation: "Statistics Canada",
     date: "2023-11",
-    aimodels: "GPT-3.5, GPT=4, Llama 2",
+    aimodels: "GPT-3.5, GPT-4, Llama 2",
     approach: "Zero-shot draft generation",
     tools: "Azure OpenAI Service, Arthur AI Bench",
     codeavailability: ""
@@ -286,15 +286,15 @@ var tabledata = [{
 },
 {
     id: 23,
-    usecasetype: "Data dissemination and information search",
-    worktitle: "Using large language models (LLMs) to improve website search experience with StatsChat",
-    link: "https://datasciencecampus.ons.gov.uk/using-large-language-models-llms-to-improve-website-search-experience-with-statschat/",
+    usecasetype: "Text generation for analysis",
+    worktitle: "ParliAI – using AI tools to monitor parliamentary coverage of the ONS across the UK",
+    link: "https://datasciencecampus.ons.gov.uk/parliai-using-ai-tools-to-monitor-parliamentary-coverage-of-the-ons-across-the-uk/",
     resourcetype: "Blog",
     organisation: "UK ONS",
     date: "2024-08",
-    aimodels: "Flan-T5 Large; all-mpnet-base-v2",
+    aimodels: "Gemini Pro 1.0, Gemma 1.0",
     approach: "RAG",
-    tools: "Flask",
+    tools: "Ollama",
     codeavailability: "Yes"
 } 
 ]
