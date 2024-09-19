@@ -55,7 +55,7 @@ var tabledata = [{
     usecasetype: "Text generation for data processing (editing)",
     worktitle: "Leveraging AI-assistants for better metadata and communication",
     link: "https://unece.org/sites/default/files/2023-12/HLGMOS%20LLM%20Paper_Preprint_1.pdf", 
-    resourcetype: "Presentation",
+    resourcetype: "Paper",
     organisation: "Bank of International Settlements",
     date: "2024-03",
     aimodels: "GPT-3.5",
@@ -293,7 +293,7 @@ var tabledata = [{
     organisation: "UK ONS",
     date: "2024-08",
     aimodels: "Gemini Pro 1.0, Gemma 1.0",
-    approach: "Prompte template",
+    approach: "Prompt template",
     tools: "Ollama",
     codeavailability: "Yes"
 } 
