@@ -296,5 +296,43 @@ var tabledata = [{
     approach: "Prompt template",
     tools: "Ollama",
     codeavailability: "Yes"
+},
+{
+    id: 24,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "IntelliStatcan: Gen-AI chatbot for obtaining statistical information",
+    link:  "https://unstats.un.org/bigdata/events/2025/ai-data-science/webinar2/presentations/Milana%20Karaganis%20-%20IntelliStatCan%20-%20Dec%202024.pdf", 
+    resourcetype: "Presentation",
+    organisation: "Statistics Canada",
+    date: "2024-12",
+    aimodels: "GPT-3.5 Turbo, GPT-4",
+    approach: "RAG",
+    tools: "Azure Blob Storage, MS Azure OpenAI Model API service (Model as a service), Azure Cosmos DB",
+    codeavailability: " "
+},
+{
+    id: 25,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Compilers Hub",
+    link:  "https://unstats.un.org/bigdata/events/2025/ai-data-science/webinar2/presentations/Stanger_T2tM_CHub_Presentation_Sprint%20on%20AI.pdf", 
+    resourcetype: "Presentation",
+    organisation: "IMF",
+    date: "2024-12",
+    aimodels: " ",
+    approach: " ",
+    tools: " ",
+    codeavailability: " "
+},{
+    id: 26,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Automatic Generation Documents of Based on Informative Official Statistics",
+    link:  "https://unstats.un.org/bigdata/events/2025/ai-data-science/webinar2/presentations/Automatic%20Generation%20of%20Informative%20Documents%20Based%20on%20Official%20Statistics%20-%20Data%20Science%20Lab%20INEGI%20Mexico.pdf", 
+    resourcetype: "Presentation",
+    organisation: "INEGI",
+    date: "2024-12",
+    aimodels: "Mixtral 8x7B",
+    approach: "LLM combined with internal API to retrieve necessary data and calculate indicators",
+    tools: " ",
+    codeavailability: " "
 } 
 ]
