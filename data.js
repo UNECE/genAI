@@ -334,5 +334,30 @@ var tabledata = [{
     approach: "LLM combined with internal API to retrieve necessary data and calculate indicators",
     tools: " ",
     codeavailability: " "
+} ,{
+    id: 27,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "StatSChat (Talk2Manuals)",
+    link:  "https://unece.org/sites/default/files/2025-05/GenAI2025_S2_IMF_Farias_P.pdf", 
+    resourcetype: "Presentation",
+    organisation: "IMF",
+    date: "2025-06",
+    aimodels: "GPT4o", 
+    approach: "RAG",
+    tools: " ",
+    codeavailability: " "
+} ,{
+    id: 28,
+    usecasetype: "Text generation for data processing",
+    worktitle: "Automating Classification with DOS Intelligent Classification Engine (DICE)",
+    link:  "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_Singapore_Lim_P.pdf", 
+    resourcetype: "Presentation",
+    organisation: "Singapore Department of Statistics",
+    date: "2025-06",
+    aimodels: "Phi-3.5-mini-instruc",
+    approach: "Fine tune a small open model",
+    tools: " ",
+    codeavailability: " "
 } 
 ]
+
