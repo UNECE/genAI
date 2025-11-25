@@ -328,7 +328,7 @@ var tabledata = [{
     worktitle: "Automatic Generation Documents of Based on Informative Official Statistics",
     link:  "https://unstats.un.org/bigdata/events/2025/ai-data-science/webinar2/presentations/Automatic%20Generation%20of%20Informative%20Documents%20Based%20on%20Official%20Statistics%20-%20Data%20Science%20Lab%20INEGI%20Mexico.pdf", 
     resourcetype: "Presentation",
-    organisation: "INEGI",
+    organisation: "INEGI, Mexico",
     date: "2024-12",
     aimodels: "Mixtral 8x7B",
     approach: "LLM combined with internal API to retrieve necessary data and calculate indicators",
@@ -358,6 +358,31 @@ var tabledata = [{
     approach: "Fine tune a small open model",
     tools: " ",
     codeavailability: " "
+}  ,{
+    id: 29,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Experimental Developments on AI Agents Using Official Statistics",
+    link:  "https://unece.org/sites/default/files/2025-11/HLG2025_Day3_AI_Mexico_Villasenor_P.pdf", 
+    resourcetype: "Presentation",
+    organisation: "INEGI, Mexico",
+    date: "2025-11",
+    aimodels: " ",
+    approach: "GraphRAG, Text to SQL",
+    tools: " ",
+    codeavailability: " "
+}  ,{
+    id: 30,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Official Statistics in the era of AI - Istat’s journey towards modern, user-centred data dissemination systems",
+    link:  "https://unece.org/sites/default/files/2025-11/HLG2025_Day3_AI_Italy_Massacci_P_0.pdf", 
+    resourcetype: "Presentation",
+    organisation: "Istat, Italy",
+    date: "2025-11",
+    aimodels: "text-embedding-3-large",
+    approach: "embedding using table metadata",
+    tools: " ",
+    codeavailability: " "
 } 
 ]
+
 
