@@ -360,16 +360,16 @@ var tabledata = [{
     codeavailability: " "
 }  ,{
     id: 29,
-    usecasetype: "Data dissemination and information search",
-    worktitle: "Experimental Developments on AI Agents Using Official Statistics",
-    link:  "https://unece.org/sites/default/files/2025-11/HLG2025_Day3_AI_Mexico_Villasenor_P.pdf", 
+    usecasetype: "Text generation for data processing",
+    worktitle: "Synthetic LLM-generated text to train small models for automatic coding",
+    link:  "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_Spain_P%C3%A9rez-Bote_P.pdf", 
     resourcetype: "Presentation",
-    organisation: "INEGI, Mexico",
-    date: "2025-11",
+    organisation: "INE, Spain",
+    date: "2025-06",
     aimodels: " ",
-    approach: "GraphRAG, Text to SQL",
+    approach: "ZeroGen (Zero-shot Learning via Dataset Generation) with real data",
     tools: " ",
-    codeavailability: " "
+    codeavailability: "Yes (https://git.hubp.de/AIML4OS/WP10)"
 }  ,{
     id: 30,
     usecasetype: "Data dissemination and information search",
@@ -382,7 +382,20 @@ var tabledata = [{
     approach: "embedding using table metadata",
     tools: " ",
     codeavailability: " "
+}  ,{
+    id: 31,
+    usecasetype: "Data dissemination and information search",
+    worktitle: "Experimental Developments on AI Agents Using Official Statistics",
+    link:  "https://unece.org/sites/default/files/2025-11/HLG2025_Day3_AI_Mexico_Villasenor_P.pdf", 
+    resourcetype: "Presentation",
+    organisation: "INEGI, Mexico",
+    date: "2025-11",
+    aimodels: " ",
+    approach: "GraphRAG, Text to SQL",
+    tools: " ",
+    codeavailability: " "
 } 
 ]
+
 
 
