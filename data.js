@@ -394,8 +394,138 @@ var tabledata = [{
     approach: "GraphRAG, Text to SQL",
     tools: " ",
     codeavailability: " "
+}  ,{
+    id: 32,
+    usecasetype: "Communication - textual materials",
+    worktitle: "BankGPT: the use of Large Language Models in official communications",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S2_Italy_Palumbo_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "Bank of Italy",
+    date: "2025-11",
+    aimodels: "GPT-3.5 turbo;LLama 2",
+    approach: "",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 33,
+    usecasetype: "Text generation for analysis",
+    worktitle: "Labour Market Intelligence: Drafting analysis reports with generative AI",
+    link: "https://unece.org/sites/default/files/2025-06/GenAI2025_S2_ILO_Ding_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "ILO",
+    date: "2025-11",
+    aimodels: "OpenAI",
+    approach: "",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 34,
+    usecasetype: "Text generation for analysis",
+    worktitle: "Generative AI In Economic Sentiment Analysis: Leveraging Generative AI Models on Prompt Manufacturing Indicator in Indonesia",
+    link: "https://unece.org/sites/default/files/2025-06/GenAI2025_S2_Indonesia_Wibisono_Andrini_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "Bank Indonesia",
+    date: "2025-11",
+    aimodels: "GPT - 3.5 Turbo; GPT-4o",
+    approach: "",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 35,
+    usecasetype: "Text generation for data processing",
+    worktitle: "Advanced artificial intelligence techniques to improve survey data quality: A focus on transformers and generative adversarial networks (GANs)",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S2_Italy_Cafieri_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "Istat, Italy",
+    date: "2025-11",
+    aimodels: "",
+    approach: "",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 36,
+    usecasetype: "Text generation for analysis",
+    worktitle: "Transformer-based Models for Official Statistics: a Tutorial",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_Italy_Ortame_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "Istat, Italy",
+    date: "2025-11",
+    aimodels: "",
+    approach: "RAG",
+    tools: "Python; Hugging Face; GitHub",
+    codeavailability: "Yes"
+},
+{
+    id: 37,
+    usecasetype: "Text generation for data processing",
+    worktitle: "From NACE 2008 to NACE 2025: Retraining an ML model in production using Large Language Models",
+    link: "https://inseefrlab.github.io/codif-ape-prez/slides/unece-2025/#/title-slide",
+    resourcetype: "Presentation",
+    organisation: "France Insee",
+    date: "2025-11",
+    aimodels: "",
+    approach: "RAG",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 38,
+    usecasetype: "Text generation for data processing",
+    worktitle: "How ONS is developing Generative AI to improve quality of survey data for classification purposes",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_UK_Banks_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "UK ONS",
+    date: "2025-11",
+    aimodels: "",
+    approach: "",
+    tools: "M365 Copilot; GitHub Copilot; Gemini Trial",
+    codeavailability: ""
+},
+{
+    id: 39,
+    usecasetype: "Text generation for data processing",
+    worktitle: "AI for Climate Finance: Agentic Retrieval and Multi-Step Reasoning for Early Warning System Investments",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_University%20of%20Zurich_Leippold_Vaghefi_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "University of Zurich, WMO",
+    date: "2025-11",
+    aimodels: "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_University%20of%20Zurich_Leippold_Vaghefi_P.pdf",
+    approach: "Agentic RAG, multi-step reasoning",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 43,
+    usecasetype: "Text generation for data processing",
+    worktitle: "Classification at scale with Language Models",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_Italy_Palumbo_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "Bank of Italy, European Central Bank",
+    date: "2025-11",
+    aimodels: "",
+    approach: "RAC",
+    tools: "",
+    codeavailability: ""
+},
+{
+    id: 44,
+    usecasetype: "Code and IT development",
+    worktitle: "Leveraging the power of containerization for easy deployment of LLMs-based services",
+    link: "https://unece.org/sites/default/files/2025-05/GenAI2025_S3_Switzerland_Morin_P.pdf",
+    resourcetype: "Presentation",
+    organisation: "Switzerland FSO",
+    date: "2025-11",
+    aimodels: "",
+    approach: "Containerisation for LLM deployment",
+    tools: "",
+    codeavailability: ""
 } 
 ]
+
 
 
 
